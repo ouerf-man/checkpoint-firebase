@@ -1,0 +1,134 @@
+body{
+    Background-image: Linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                    Linear-gradient(127deg, black, black 70.71%),
+                    Linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+
+    margin : 0 ; /* delete space ly deeyer bel page*/
+}
+
+/* navbar code for all pages*/
+    
+
+/*courses page*/
+
+.header{
+    height: 450px;
+    background-image: url("https://iyadhkhalfallah.github.io/checkpointsGMC/res/webdev3.png");
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.header h1{
+    margin-top: 0;
+    font-size: 6em;
+    font-family: 'Bree Serif', serif;
+    color: #fff;
+    position: relative; /*
+        Un élément positionné de façon relative est un élément dont la propriété 
+        de position calculée est relative. Dans ce cas, les propriétés top ou bottom 
+        indiquent le décalage vertical à appliquer et left ou right indiquent 
+        le décalage horizontal. (https://developer.mozilla.org/fr/docs/Web/CSS/position)
+    */
+    top: 40%; /*remove position:relative and this property will not have any effect*/
+    text-align: center;
+    text-shadow: 5px 2px rgb(12, 11, 11);
+}
+
+.courses{
+    margin-top: 5%;
+    padding-left: 10%;
+}
+
+/*
+.row{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.row img{
+    margin-right: 4% ;
+}
+*/
+
+.courses-form{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.courses-form h4{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.buttons{
+    margin-bottom: 20px;
+}
+
+/*JQUERY CHECKPOINT STARTS HERE*/
+
+.btn-on-img{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    display: none;
+}
+
+.img{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal div{
+    width: 50%;
+    height: 200px;
+    background-color: white;
+    border-radius:30px ;
+    padding: 50px;
+}
+/*JQUERY CHECKPOINT ENDS HERE*/
+
+
+/* Contact */ 
+
+.input-groupe{
+    text-align: center;
+    color: white;
+}
+
+.input-contact{
+    display: block;
+    margin: 10px auto;
+    width: 20%;
+    height: 20px;
+    border-radius:5px ;
+}
+
+.contact-form{
+    margin: 30px 0 ;
+}
+
+.submit{
+    width: 80px;
+    height: 29px;
+    margin-top: 10px;
+    border-radius: 3px ;
+    background-color: #337ab7 ;
+    border-color: #337ab7;
+    color: white;
+}

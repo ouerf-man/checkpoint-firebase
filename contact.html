@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="res/logo.png" alt="logo" width="60">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white font-weight-bolder" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white font-weight-bolder" href="Courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white font-weight-bolder" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+            <div class="header">
+                    <h1>Contact</h1>
+            </div>
+                <form class="contact-form">
+                <div class="input-groupe">
+                <label>Name</label> 
+                <input type="text" placeholder="your name" class="input-contact" id="name"> 
+            </div>
+            <div class="input-groupe">
+                <label>Track</label>
+                <select class="input-contact" id="track">
+                    <option>Web </option>
+                    <option>Game</option>
+                    <option>AI</option>
+                </select> 
+            </div>
+            <div class="input-groupe">
+                <label>Email address</label> 
+                <input type="email" placeholder="name@example.com" class="input-contact" id="email">
+            </div>
+            <div class="input-groupe">
+                <label>Phone number</label> 
+                <input type="number" placeholder="your phone Number" class="input-contact" id="number">
+            </div>
+            <div class="input-groupe">  
+                <input type="button" value="submit" class="submit" id="btnSubmit"> 
+            </div> 
+            </form>
+            <table class="table table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">email</th>
+                  <th scope="col">phone</th>
+                  <th scope="col">track</th>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+              </tbody>
+            </table>
+          
+</body>
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-database.js"></script>
+<script src="js/firebaseApp.js"></script>
+</html>
